@@ -1,14 +1,13 @@
-import sys
 import calendar
+from datetime import datetime
 
 print("Herzlich willkommen im Kalender\n")
 
-try:
-    year = int(sys.argv[1])
-    month = int(sys.argv[2])
-except (IndexError, ValueError):
-    print("❗ Fehler: Bitte Jahr und Monat als Argumente übergeben (z. B. 2025 7)")
-    sys.exit(1)
+now = datetime.now()
+year = now.year
+month = now.month
 
+print(f"Heutiger Monat: {month}/{year}\n")
 print(calendar.month(year, month))
 print("Alles Gute!")
+
