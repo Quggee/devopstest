@@ -4,5 +4,4 @@ WORKDIR /app
 
 COPY main.py .
 
-# WICHTIG: CMD erwartet Liste, damit Argumente korrekt übergeben werden
 CMD ["python", "main.py"]
