@@ -3,7 +3,6 @@ import calendar
 
 print("Herzlich willkommen im Kalender\n")
 
-# Argumente auslesen
 try:
     year = int(sys.argv[1])
     month = int(sys.argv[2])
